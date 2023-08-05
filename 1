@@ -534,7 +534,16 @@ getgenv().expertise = bool22
 while getgenv().expertise do wait()
 pcall(function()
 workspace:WaitForChild("Merchants"):WaitForChild("ExpertiseMerchant"):WaitForChild("Clickable"):WaitForChild("Retum"):FireServer()
-wait()
+wait(1)
+end)
+end
+end)
+QuestSection:NewToggle("Auto Get Haki",false,function(bool122)
+getgenv().haki = bool122
+while getgenv().haki do wait()
+pcall(function()
+workspace:WaitForChild("Merchants"):WaitForChild("QuestHakiMerchant"):WaitForChild("Clickable"):WaitForChild("Retum"):FireServer()
+wait(1)
 end)
 end
 end)
@@ -543,7 +552,7 @@ getgenv().tre = bool11
 while getgenv().tre do wait()
 pcall(function()
 workspace:WaitForChild("Merchants"):WaitForChild("QuestFishMerchant"):WaitForChild("Clickable"):WaitForChild("Retum"):FireServer()
-wait()
+wait(1)
 end)
 end
 end)

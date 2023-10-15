@@ -121,12 +121,9 @@ local listed = {
 1370768463 -- hackcc11
 }
 
-    _G.WhiteListed = false
-        for _, v1 in pairs(listed) do
-            if game.Players.LocalPlayer.UserId == v1 then
+
 _G.WhiteListed = true
-            end
-        end
+
 if _G.WhiteListed then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Saluna SCRIPT | OPL: ARNACHY | Version: D3", "Serpent", colors)
